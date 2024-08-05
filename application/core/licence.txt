@@ -1,0 +1,1 @@
+{"is_active":"9564536547182e5c15012cc836590cb2","purchase_code":"xerochat-master-code-localhost-special","item_name":"XeroChat","buy_at":"N\/A","licence_type":"Extended License","domain":"localhost","checking_date":"2024-08-04"}
