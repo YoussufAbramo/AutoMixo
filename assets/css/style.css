@@ -53,6 +53,9 @@
 /* 2. Mixin */
 /* 3. Bootstrap Override */
 /* 3.1 Misc */
+p {
+  color: black !important;
+}
 @import url("//fonts.googleapis.com/css?family=Nunito:400,600,700,800");
 .btn:focus,
 .btn:active,
@@ -2852,7 +2855,8 @@ padding-left: 22px;}
         color: var(--blue);
       font-weight: 500;  }
     .main-sidebar .sidebar-menu li.active a span {
-      color: var(--blue);
+/*       color: var(--blue); */
+      color: 007BFF;
       font-weight: 700; }
       .main-sidebar .sidebar-menu li.active a.has-dropdown:after {
         -webkit-transform: translate(0, -50%) rotate(90deg);
