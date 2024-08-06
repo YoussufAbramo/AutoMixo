@@ -1980,8 +1980,10 @@ body {
   font-size: 14px;
   font-weight: 400;
   /*font-family: "Nunito", "Segoe UI", arial;*/
-  font-family: system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans","Liberation Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
-  color: #064663; }
+  font-family: "poppins";
+/*   font-family: system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans","Liberation Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji"; */
+  color: #064663;
+}
 
 a.bb {
   text-decoration: none;
