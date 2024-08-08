@@ -53,7 +53,7 @@ $month_name_array = array(
                 <div class="card-stats-item-label"><?php echo $this->lang->line('Instagram'); ?></div>
               </div>
               <div class="card-stats-item">
-                <div class="card-stats-item-count text-info gradient" id="esub"><?php echo custom_number_format($esub); ?></div>
+                <div class="card-stats-item-count text-info" id="esub"><?php echo custom_number_format($esub); ?></div>
                 <div class="card-stats-item-label"><?php echo $this->lang->line('Ecommerce'); ?></div>
               </div>
             </div>
@@ -86,7 +86,7 @@ $month_name_array = array(
                 
               </h4>
             </div>
-            <div class="card-body text-primary gradient" id="total_subscribers"><?php echo custom_number_format($total_sub); ?></div>
+            <div class="card-body" id="total_subscribers"><?php echo custom_number_format($total_sub); ?></div>
           </div>
         </div>
       </div>
@@ -132,7 +132,7 @@ $month_name_array = array(
                 <div class="card-stats-item-label"><?php echo $this->lang->line('Instagram'); ?></div>
               </div>
               <div class="card-stats-item">
-                <div class="card-stats-item-count text-info gradient" id=""><?php echo custom_number_format($number_of_bot_flow); ?></div>
+                <div class="card-stats-item-count text-info" id=""><?php echo custom_number_format($number_of_bot_flow); ?></div>
                 <div class="card-stats-item-label"><?php echo $this->lang->line('Flow'); ?></div>
               </div>
             </div>
@@ -145,7 +145,7 @@ $month_name_array = array(
             <div class="card-header">
               <h4 class="text-dark"><?php echo $this->lang->line('Bot Enabled'); ?></h4>
             </div>
-            <div class="card-body text-secondary gradient" id=""><?php echo custom_number_format($number_of_bots); ?></div>
+            <div class="card-body" id=""><?php echo custom_number_format($number_of_bots); ?></div>
           </div>
         </div>
 
@@ -160,15 +160,15 @@ $month_name_array = array(
             <div class="text-center waiting hidden" id="e_loader"><i class="fas fa-spinner fa-spin blue text-center" style="font-size: 40px;"></i></div>
             <div class="card-stats-items ecommerce_month_change_middle_content">
               <div class="card-stats-item">
-                <div class="card-stats-item-count text-info gradient" id="order_block"><?php echo custom_number_format($total_orders); ?></div>
+                <div class="card-stats-item-count text-info" id="order_block"><?php echo custom_number_format($total_orders); ?></div>
                 <div class="card-stats-item-label"><?php echo $this->lang->line('Orders'); ?></div>
               </div>
               <div class="card-stats-item">
-                <div class="card-stats-item-count text-danger gradient" id="recovered_block"><?php echo custom_number_format($summary_recovered_cart); ?></div>
+                <div class="card-stats-item-count text-danger" id="recovered_block"><?php echo custom_number_format($summary_recovered_cart); ?></div>
                 <div class="card-stats-item-label"><?php echo $this->lang->line('Pending'); ?></div>
               </div>
               <div class="card-stats-item">
-                <div class="card-stats-item-count text-success gradient" id="checkout_block"><?php echo custom_number_format($summary_checkout_cart); ?></div>
+                <div class="card-stats-item-count text-success" id="checkout_block"><?php echo custom_number_format($summary_checkout_cart); ?></div>
                 <div class="card-stats-item-label"><?php echo $this->lang->line('Checkout'); ?></div>
               </div>
             </div>
@@ -211,7 +211,7 @@ $month_name_array = array(
                 </div> 
               </h4>
             </div>
-            <div class="card-body text-warning gradient" id="total_earning">
+            <div class="card-body" id="total_earning">
               <?php  echo custom_number_format($summary_earning); ?>     
             </div>
           </div>

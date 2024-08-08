@@ -28,7 +28,7 @@ $config['messengerbot_file_upload_limit'] = '15';
 
 $config['email_sending_option'] = 'php_mail';
 $config['enable_tracking_subscribers_last_interaction'] = 'yes';
-$config['is_rtl'] = '0';
+$config['is_rtl'] = '1';
 $config['force_https'] = '0';
 $config['enable_signup_form'] = '1';
 $config['instagram_reply_enable_disable'] = '1';

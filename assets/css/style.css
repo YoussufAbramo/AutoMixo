@@ -121,16 +121,16 @@ a:not(.btn-social-icon):not(.btn-social):not(.page-link) .fab {
   color: #cdd3d8 !important; }
 
 .text-success, .text-success-all *, .text-success-all *:before, .text-success-all *:after {
-  color: #63ed7a !important; }
+  color: black !important; }
 
 .text-info, .text-info-all *, .text-info-all *:before, .text-info-all *:after {
-  color: #3abaf4 !important; }
+  color: black !important; }
 
 .text-warning, .text-warning-all *, .text-warning-all *:before, .text-warning-all *:after {
   color: #ffa426 !important; }
 
 .text-danger, .text-danger-all *, .text-danger-all *:before, .text-danger-all *:after {
-  color: #fc544b !important; }
+  color: black !important; }
 
 .text-light, .text-light-all *, .text-light-all *:before, .text-light-all *:after {
   color: #e3eaef !important; }
@@ -791,7 +791,7 @@ select.form-control:not([size]):not([multiple]) {
   .card.card-statistic-1 .card-body, .card.card-statistic-2 .card-body {
     font-size: 26px;
     font-weight: 400;
-    color: #34395e;
+    color: black;
     padding-bottom: 0; }
   .card.card-statistic-1, .card.card-statistic-2 {
     display: inline-block;
@@ -2845,7 +2845,7 @@ padding-left: 22px;}
       padding: 0 10px 0 20px;
       width: 100%;
       letter-spacing: .3px;
-      color: #064663;
+      color: black;
       text-decoration: none; }
       .main-sidebar .sidebar-menu li a .badge {
         float: right;
