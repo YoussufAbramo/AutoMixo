@@ -2852,7 +2852,7 @@ padding-left: 22px;}
         padding: 5px 10px;
         margin-top: 2px; }
       .main-sidebar .sidebar-menu li a .sidebar-icons {
-        width: 35px;
+        width: 20px;
         margin-right: 20px;
         text-align: center; }
       .main-sidebar .sidebar-menu li a span {
@@ -2860,7 +2860,7 @@ padding-left: 22px;}
         font-weight: 450;
         width: 100%; }
       .main-sidebar .sidebar-menu li a span:hover {
-        color: var(--blue);
+        color: #007BFF;
       font-weight: 500;  }
     .main-sidebar .sidebar-menu li.active a span {
       color: #007BFF;

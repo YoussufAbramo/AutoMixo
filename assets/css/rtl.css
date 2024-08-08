@@ -11,6 +11,9 @@
  * @url   https://getstisla.com
  *
  */
+
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@100;200;300;400;500;600;700&display=swap');
+
 @font-face {
   font-family: Vazir;
   src: url("../fonts/vazir/Vazir.eot");
@@ -55,7 +58,7 @@
 
 body, html {
   direction: rtl;
-  font-family: Vazir, Tahoma, Arial; }
+  font-family: "IBM Plex Sans Arabic", sans-serif; }
 
 .ltr {
   direction: ltr; }
@@ -64,7 +67,7 @@ body, html {
   direction: rtl; }
 
 h1, h2, h3, h4, h5, h6, p, a, span, input, textarea, select, option, label {
-  font-family: Vazir, Tahoma, Arial; }
+  font-family: "IBM Plex Sans Arabic", sans-serif; }
 
 .main-sidebar {
   right: 0;
@@ -256,7 +259,7 @@ body.sidebar-gone .navbar {
 
 .form-group label {
   font-weight: normal;
-  font-family: Vazir, Tahoma, Arial;
+  font-family: "IBM Plex Sans Arabic", sans-serif;
   letter-spacing: 0; }
 
 .dropdown-list .dropdown-header {
@@ -270,14 +273,14 @@ body.sidebar-gone .navbar {
 
 .card.card-sm-3 .card-header h4, .card.card-sm-4 .card-header h4 {
   letter-spacing: 0;
-  font-family: Vazir, Tahoma, Arial; }
+  font-family: "IBM Plex Sans Arabic", sans-serif; }
 
 .main-sidebar .sidebar-user .sidebar-user-picture {
   float: right;
   margin-left: 10px; }
 
 .main-footer {
-  font-family: Vazir, Tahoma, Arial;
+  font-family: "IBM Plex Sans Arabic", sans-serif;
   padding: 20px 300px 20px 10px;
   /*font-size: 90%;*/
   /*border-top: solid 1px #EEE;*/
