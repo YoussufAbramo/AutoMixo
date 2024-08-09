@@ -1,0 +1,320 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+- phpMyAdmin XML Dump
+- version 5.2.1
+- https://www.phpmyadmin.net
+-
+- Host: 127.0.0.1
+- Generation Time: 08 أغسطس 2024 الساعة 17:18
+- إصدار الخادم: 10.4.32-MariaDB
+- PHP Version: 8.2.12
+-->
+
+<pma_xml_export version="1.0" xmlns:pma="https://www.phpmyadmin.net/some_doc_url/">
+    <!--
+    - Structure schemas
+    -->
+    <pma:structure_schemas>
+        <pma:database name="dashboard.io" collation="utf8mb4_general_ci" charset="utf8mb4">
+            <pma:table name="menu">
+                CREATE TABLE `menu` (
+                  `id` int(11) NOT NULL AUTO_INCREMENT,
+                  `name` varchar(255) NOT NULL,
+                  `icon` varchar(255) NOT NULL,
+                  `color` varchar(20) NOT NULL,
+                  `url` varchar(255) NOT NULL,
+                  `serial` int(11) NOT NULL,
+                  `module_access` varchar(255) NOT NULL,
+                  `have_child` enum(&#039;1&#039;,&#039;0&#039;) NOT NULL DEFAULT &#039;0&#039;,
+                  `only_admin` enum(&#039;1&#039;,&#039;0&#039;) NOT NULL DEFAULT &#039;1&#039;,
+                  `only_member` enum(&#039;1&#039;,&#039;0&#039;) NOT NULL DEFAULT &#039;0&#039;,
+                  `add_ons_id` int(11) NOT NULL,
+                  `is_external` enum(&#039;0&#039;,&#039;1&#039;) NOT NULL DEFAULT &#039;0&#039;,
+                  `header_text` varchar(255) NOT NULL,
+                  `is_menu_manager` enum(&#039;0&#039;,&#039;1&#039;) NOT NULL DEFAULT &#039;0&#039;,
+                  `custom_page_id` int(11) NOT NULL,
+                  PRIMARY KEY (`id`)
+                ) ENGINE=InnoDB AUTO_INCREMENT=55 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+            </pma:table>
+        </pma:database>
+    </pma:structure_schemas>
+
+    <!--
+    - Database: 'dashboard.io'
+    -->
+    <database name="dashboard.io">
+        <!-- الجدول menu -->
+        <table name="menu">
+            <column name="id">35</column>
+            <column name="name">Dashboard</column>
+            <column name="icon">../assets/images/icons/dashboard.png</column>
+            <column name="color"></column>
+            <column name="url">dashboard</column>
+            <column name="serial">1</column>
+            <column name="module_access"></column>
+            <column name="have_child">0</column>
+            <column name="only_admin">0</column>
+            <column name="only_member">0</column>
+            <column name="add_ons_id">0</column>
+            <column name="is_external">0</column>
+            <column name="header_text"></column>
+            <column name="is_menu_manager">0</column>
+            <column name="custom_page_id">0</column>
+        </table>
+        <table name="menu">
+            <column name="id">36</column>
+            <column name="name">Connect Accounts</column>
+            <column name="icon">../assets/images/icons/connect-accounts.png</column>
+            <column name="color"></column>
+            <column name="url">social_accounts/index</column>
+            <column name="serial">5</column>
+            <column name="module_access">65</column>
+            <column name="have_child">0</column>
+            <column name="only_admin">0</column>
+            <column name="only_member">0</column>
+            <column name="add_ons_id">0</column>
+            <column name="is_external">0</column>
+            <column name="header_text">Integrations</column>
+            <column name="is_menu_manager">0</column>
+            <column name="custom_page_id">0</column>
+        </table>
+        <table name="menu">
+            <column name="id">37</column>
+            <column name="name">API Channels</column>
+            <column name="icon">../assets/images/icons/api-channels.png</column>
+            <column name="color"></column>
+            <column name="url">integration</column>
+            <column name="serial">9</column>
+            <column name="module_access"></column>
+            <column name="have_child">0</column>
+            <column name="only_admin">0</column>
+            <column name="only_member">0</column>
+            <column name="add_ons_id">0</column>
+            <column name="is_external">0</column>
+            <column name="header_text"></column>
+            <column name="is_menu_manager">0</column>
+            <column name="custom_page_id">0</column>
+        </table>
+        <table name="menu">
+            <column name="id">38</column>
+            <column name="name">Comment Manager</column>
+            <column name="icon">../assets/images/icons/comment-manager-fb.png</column>
+            <column name="color"></column>
+            <column name="url">comment_automation/comment_growth_tools/fb</column>
+            <column name="serial">26</column>
+            <column name="module_access">80,204,206,220,222,223,251,256,278,279</column>
+            <column name="have_child">0</column>
+            <column name="only_admin">0</column>
+            <column name="only_member">0</column>
+            <column name="add_ons_id">0</column>
+            <column name="is_external">0</column>
+            <column name="header_text"></column>
+            <column name="is_menu_manager">0</column>
+            <column name="custom_page_id">0</column>
+        </table>
+        <table name="menu">
+            <column name="id">39</column>
+            <column name="name">Subscriber Manager</column>
+            <column name="icon">../assets/images/icons/subscriber-manager-fb.png</column>
+            <column name="color"></column>
+            <column name="url">subscriber_manager/bot_subscribers?media_type=fb</column>
+            <column name="serial">17</column>
+            <column name="module_access">66</column>
+            <column name="have_child">0</column>
+            <column name="only_admin">0</column>
+            <column name="only_member">0</column>
+            <column name="add_ons_id">0</column>
+            <column name="is_external">0</column>
+            <column name="header_text">Facebook Tools</column>
+            <column name="is_menu_manager">0</column>
+            <column name="custom_page_id">0</column>
+        </table>
+        <table name="menu">
+            <column name="id">40</column>
+            <column name="name">Live Chat</column>
+            <column name="icon">../assets/images/icons/live-chat-fb.png</column>
+            <column name="color"></column>
+            <column name="url">livechat/load_livechat?media_type=fb</column>
+            <column name="serial">21</column>
+            <column name="module_access">82</column>
+            <column name="have_child">0</column>
+            <column name="only_admin">0</column>
+            <column name="only_member">0</column>
+            <column name="add_ons_id">0</column>
+            <column name="is_external">0</column>
+            <column name="header_text"></column>
+            <column name="is_menu_manager">0</column>
+            <column name="custom_page_id">0</column>
+        </table>
+        <table name="menu">
+            <column name="id">41</column>
+            <column name="name">Bot Manager</column>
+            <column name="icon">../assets/images/icons/bot-manager-fb.png</column>
+            <column name="color"></column>
+            <column name="url">messenger_bot/bot_list?media_type=fb</column>
+            <column name="serial">25</column>
+            <column name="module_access">199</column>
+            <column name="have_child">0</column>
+            <column name="only_admin">0</column>
+            <column name="only_member">0</column>
+            <column name="add_ons_id">0</column>
+            <column name="is_external">0</column>
+            <column name="header_text"></column>
+            <column name="is_menu_manager">0</column>
+            <column name="custom_page_id">0</column>
+        </table>
+        <table name="menu">
+            <column name="id">42</column>
+            <column name="name">Broadcasting</column>
+            <column name="icon">../assets/images/icons/broadcast-campaign.png</column>
+            <column name="color"></column>
+            <column name="url">messenger_bot_broadcast?media_type=fb</column>
+            <column name="serial">29</column>
+            <column name="module_access">79,210,211,262,263,264</column>
+            <column name="have_child">0</column>
+            <column name="only_admin">0</column>
+            <column name="only_member">0</column>
+            <column name="add_ons_id">0</column>
+            <column name="is_external">0</column>
+            <column name="header_text"></column>
+            <column name="is_menu_manager">0</column>
+            <column name="custom_page_id">0</column>
+        </table>
+        <table name="menu">
+            <column name="id">43</column>
+            <column name="name">Ecommerce Store</column>
+            <column name="icon">../assets/images/icons/ecommerce-store.png</column>
+            <column name="color"></column>
+            <column name="url">ecommerce</column>
+            <column name="serial">37</column>
+            <column name="module_access">268</column>
+            <column name="have_child">0</column>
+            <column name="only_admin">0</column>
+            <column name="only_member">0</column>
+            <column name="add_ons_id">0</column>
+            <column name="is_external">0</column>
+            <column name="header_text">Ecommerce Features</column>
+            <column name="is_menu_manager">0</column>
+            <column name="custom_page_id">0</column>
+        </table>
+        <table name="menu">
+            <column name="id">44</column>
+            <column name="name">Social Posting</column>
+            <column name="icon">../assets/images/icons/social-posting.png</column>
+            <column name="color"></column>
+            <column name="url">ultrapost</column>
+            <column name="serial">35</column>
+            <column name="module_access">100</column>
+            <column name="have_child">0</column>
+            <column name="only_admin">0</column>
+            <column name="only_member">0</column>
+            <column name="add_ons_id">0</column>
+            <column name="is_external">0</column>
+            <column name="header_text">Posting Tools</column>
+            <column name="is_menu_manager">0</column>
+            <column name="custom_page_id">0</column>
+        </table>
+        <table name="menu">
+            <column name="id">47</column>
+            <column name="name">System</column>
+            <column name="icon">../assets/images/icons/system.png</column>
+            <column name="color"></column>
+            <column name="url"></column>
+            <column name="serial">49</column>
+            <column name="module_access"></column>
+            <column name="have_child">1</column>
+            <column name="only_admin">1</column>
+            <column name="only_member">0</column>
+            <column name="add_ons_id">0</column>
+            <column name="is_external">0</column>
+            <column name="header_text">Administrations</column>
+            <column name="is_menu_manager">0</column>
+            <column name="custom_page_id">0</column>
+        </table>
+        <table name="menu">
+            <column name="id">48</column>
+            <column name="name">Subscription</column>
+            <column name="icon">../assets/images/icons/subscription.png</column>
+            <column name="color"></column>
+            <column name="url"></column>
+            <column name="serial">53</column>
+            <column name="module_access"></column>
+            <column name="have_child">1</column>
+            <column name="only_admin">1</column>
+            <column name="only_member">0</column>
+            <column name="add_ons_id">0</column>
+            <column name="is_external">0</column>
+            <column name="header_text"></column>
+            <column name="is_menu_manager">0</column>
+            <column name="custom_page_id">0</column>
+        </table>
+        <table name="menu">
+            <column name="id">50</column>
+            <column name="name">Subscriber Manager</column>
+            <column name="icon">../assets/images/icons/subscriber-manager-ig.png</column>
+            <column name="color"></column>
+            <column name="url">subscriber_manager/bot_subscribers?media_type=ig</column>
+            <column name="serial">30</column>
+            <column name="module_access">66</column>
+            <column name="have_child">0</column>
+            <column name="only_admin">0</column>
+            <column name="only_member">0</column>
+            <column name="add_ons_id">0</column>
+            <column name="is_external">0</column>
+            <column name="header_text">Instagram Tools</column>
+            <column name="is_menu_manager">0</column>
+            <column name="custom_page_id">0</column>
+        </table>
+        <table name="menu">
+            <column name="id">51</column>
+            <column name="name">Live Chat</column>
+            <column name="icon">../assets/images/icons/live-chat-ig.png</column>
+            <column name="color"></column>
+            <column name="url">livechat/load_livechat?media_type=ig</column>
+            <column name="serial">31</column>
+            <column name="module_access">82</column>
+            <column name="have_child">0</column>
+            <column name="only_admin">0</column>
+            <column name="only_member">0</column>
+            <column name="add_ons_id">0</column>
+            <column name="is_external">0</column>
+            <column name="header_text"></column>
+            <column name="is_menu_manager">0</column>
+            <column name="custom_page_id">0</column>
+        </table>
+        <table name="menu">
+            <column name="id">52</column>
+            <column name="name">Bot Manager</column>
+            <column name="icon">../assets/images/icons/bot-manager-ig.png</column>
+            <column name="color"></column>
+            <column name="url">messenger_bot/bot_list?media_type=ig</column>
+            <column name="serial">32</column>
+            <column name="module_access">320</column>
+            <column name="have_child">0</column>
+            <column name="only_admin">0</column>
+            <column name="only_member">0</column>
+            <column name="add_ons_id">0</column>
+            <column name="is_external">0</column>
+            <column name="header_text"></column>
+            <column name="is_menu_manager">0</column>
+            <column name="custom_page_id">0</column>
+        </table>
+        <table name="menu">
+            <column name="id">53</column>
+            <column name="name">Comment Manager</column>
+            <column name="icon">../assets/images/icons/comment-manager-ig.png</column>
+            <column name="color"></column>
+            <column name="url">comment_automation/comment_growth_tools/ig</column>
+            <column name="serial">33</column>
+            <column name="module_access">80,204,206,220,222,223,251,256,278,279</column>
+            <column name="have_child">0</column>
+            <column name="only_admin">0</column>
+            <column name="only_member">0</column>
+            <column name="add_ons_id">0</column>
+            <column name="is_external">0</column>
+            <column name="header_text"></column>
+            <column name="is_menu_manager">0</column>
+            <column name="custom_page_id">0</column>
+        </table>
+    </database>
+</pma_xml_export>

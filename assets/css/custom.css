@@ -16,8 +16,8 @@ body{background-color: #FAFDFB;}
 .main-sidebar .sidebar-brand{height: 80px !important;background-color: #fff;box-shadow: 0 0 8px rgba(0, 0, 0, .06);}
 .main-sidebar .sidebar-brand img{max-width: 170px !important;max-height: 60px !important;margin-top:18px;margin-bottom:14px;}
 .main-sidebar  .sidebar-brand-sm img{width: 32px !important;height: 32px !important;margin-top:20px !important;}
-.main-sidebar .sidebar-menu li a i{margin-left:4px;font-size: 20px !important;}
-.main-sidebar .sidebar-menu li ul li a i{margin-right:5px;font-size: 14px !important;}
+.main-sidebar .sidebar-menu li a .sidebar-icons {margin-left:4px;font-size: 20px !important;}
+.main-sidebar .sidebar-menu li ul li a img {margin-right:5px;font-size: 14px !important;}
 body:not(.sidebar-mini) .sidebar-style-2 .sidebar-menu li.active ul.dropdown-menu li a
 {
   padding-left: 50px;

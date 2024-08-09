@@ -64,7 +64,7 @@ $sidebar_user_type = $this->session->userdata('user_type');
               $color_css = "background: -webkit-linear-gradient(45deg,".adjustBrightness($color,-0.85).",".adjustBrightness($color,-0.65).",".adjustBrightness($color,-0.45).",".adjustBrightness($color,-0.25).",".$color.");-webkit-background-clip: text;-webkit-text-fill-color: transparent;";
             }
 
-            $menu_html .= "<li class='".$dropdown_class1."'><a {$parent_newtab} href='".$site_url1.$single_menu['url']."' class='nav-link ".$dropdown_class2."'><i class= '".$single_menu['icon']."' style='".$color_css."'></i> <span>".$this->lang->line($single_menu['name']).$extraText."</span></a>"; 
+            $menu_html .= "<li class='".$dropdown_class1."'><a {$parent_newtab} href='".$site_url1.$single_menu['url']."' class='nav-link ".$dropdown_class2."'><i style='".$color_css."'></i> <img class='sidebar-icons' src=".$single_menu['icon']."> <span>".$this->lang->line($single_menu['name']).$extraText."</span></a>"; 
 
             array_push($all_links, $site_url1.$single_menu['url']);  
 
@@ -102,7 +102,7 @@ $sidebar_user_type = $this->session->userdata('user_type');
                   $hide_second_menu = '';
                   if($sidebar_user_type != 'Admin' && !empty($module_access2) && count(array_intersect($this->module_access, $module_access2))==0) $hide_second_menu = 'hidden';
                   
-                  $menu_html .= "<li class='".$hide_second_menu."'><a {$child_newtab} {$second_menu_href} class='nav-link'><i style='color:".$color2."' class='".$single_child_menu['icon']."'></i>".$this->lang->line($single_child_menu['name'])."</a>";
+                  $menu_html .= "<li class='".$hide_second_menu."'><a {$child_newtab} {$second_menu_href} class='nav-link'><i style='color:".$color2."' class=''> <img class='sidebar-sub-icons' src=".$single_child_menu['icon']."></i>".$this->lang->line($single_child_menu['name'])."</a>";
 
                   array_push($all_links, $site_url2.$single_child_menu['url']);
 
@@ -123,7 +123,7 @@ $sidebar_user_type = $this->session->userdata('user_type');
                       if($single_child_menu_2['is_external']=='1') $site_url3=""; else $site_url3=site_url(); // if external link then no need to add site_url()
                       if($single_child_menu_2['is_external']=='1') $child2_newtab=" target='_BLANK'"; else $child2_newtab=''; // if external link then open in new tab   
 
-                      $menu_html .= "<li><a {$child2_newtab} href='".$site_url3.$single_child_menu_2['url']."' class='nav-link'><i class='".$single_child_menu_2['icon']."'></i> ".$this->lang->line($single_child_menu_2['name'])."</a></li>";
+                      $menu_html .= "<li> <a {$child2_newtab} href='".$site_url3.$single_child_menu_2['url']."' class='nav-link'><i class='".$single_child_menu_2['icon']."'></i> ".$this->lang->line($single_child_menu_2['name'])."</a></li>";
 
                       array_push($all_links, $site_url3.$single_child_menu_2['url']);
                     }
@@ -158,11 +158,11 @@ $sidebar_user_type = $this->session->userdata('user_type');
           echo'
           <li class="menu-header">'.$this->lang->line("Payment").'</li>
           <li class="nav-item dropdown">
-            <a href="#" class="nav-link has-dropdown" style="background: -webkit-linear-gradient(270deg,#ffa801,#5a3b01);-webkit-background-clip: text;-webkit-text-fill-color: transparent;"><i class="fa fa-coins"></i> <span>'.$this->lang->line("Payment").'</span></a>
+            <a href="#" class="nav-link has-dropdown" style="background: -webkit-linear-gradient(270deg,#ffa801,#5a3b01);-webkit-background-clip: text;-webkit-text-fill-color: transparent;"><img style="width: 35px;" src="../assets/images/icons/payment.png"> <span>'.$this->lang->line("Payment").'</span></a>
             <ul class="dropdown-menu">
-              <li class=""><a href="'.base_url("payment/buy_package").'" style="color:#ffa801" class="nav-link"><i class="fa fa-cart-plus"></i>'.$this->lang->line("Renew Package").'</a></li>
-              <li class=""><a href="'.base_url("payment/transaction_log").'" style="color:#ffa801" class="nav-link"><i class="fa fa-history"></i>'.$this->lang->line("Transaction Log").'</a></li>
-              <li class=""><a href="'.base_url("payment/usage_history").'" style="color:#ffa801" class="nav-link"><i class="fa fa-user-clock"></i>'.$this->lang->line("Usage Log").'</a></li>
+              <li style="background-color:#FDECCE;" class=""><a href="'.base_url("payment/buy_package").'" style="color:black" class="nav-link"><img style="width: 16px;" src="../assets/images/icons/renew-package.png">'.$this->lang->line("Renew Package").'</a></li>
+              <li style="background-color:#FDECCE;" class=""><a href="'.base_url("payment/transaction_log").'" style="color:black" class="nav-link"><img style="width: 16px;" src="../assets/images/icons/transaction-log.png">'.$this->lang->line("Transaction Log").'</a></li>
+              <li style="background-color:#FDECCE;" class=""><a href="'.base_url("payment/usage_history").'" style="color:black" class="nav-link"><img style="width: 16px;" src="../assets/images/icons/usage-log.png">'.$this->lang->line("Usage Log").'</a></li>
             </ul>
           </li>
           ';

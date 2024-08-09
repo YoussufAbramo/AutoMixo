@@ -3,8 +3,8 @@
                     $active_group = 'default';
                     $active_record = true;
                     $db['default']['hostname'] = 'localhost';
-                    $db['default']['username'] = 'root';
-                    $db['default']['password'] = '';
+                    $db['default']['username'] = 'atmx';
+                    $db['default']['password'] = '1234@4321';
                     $db['default']['database'] = 'dashboard.io';
                     $db['default']['dbdriver'] = 'mysqli';
                     $db['default']['dbprefix'] = '';

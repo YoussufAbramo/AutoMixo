@@ -53,9 +53,20 @@
 /* 2. Mixin */
 /* 3. Bootstrap Override */
 /* 3.1 Misc */
+
 p {
   color: black !important;
 }
+
+.btn-primary:not(:disabled):not(.disabled).active, .btn-primary:not(:disabled):not(.disabled):active, .show>.btn-primary.dropdown-toggle {
+  background-color: #007BFF;
+  border-color: #007BFF;
+}
+
+.btn.disabled, .btn:disabled {
+  opacity: 1;
+}
+
 @import url("//fonts.googleapis.com/css?family=Nunito:400,600,700,800");
 .btn:focus,
 .btn:active,
@@ -110,16 +121,16 @@ a:not(.btn-social-icon):not(.btn-social):not(.page-link) .fab {
   color: #cdd3d8 !important; }
 
 .text-success, .text-success-all *, .text-success-all *:before, .text-success-all *:after {
-  color: #63ed7a !important; }
+  color: black !important; }
 
 .text-info, .text-info-all *, .text-info-all *:before, .text-info-all *:after {
-  color: #3abaf4 !important; }
+  color: black !important; }
 
 .text-warning, .text-warning-all *, .text-warning-all *:before, .text-warning-all *:after {
   color: #ffa426 !important; }
 
 .text-danger, .text-danger-all *, .text-danger-all *:before, .text-danger-all *:after {
-  color: #fc544b !important; }
+  color: black !important; }
 
 .text-light, .text-light-all *, .text-light-all *:before, .text-light-all *:after {
   color: #e3eaef !important; }
@@ -606,7 +617,7 @@ select.form-control:not([size]):not([multiple]) {
 .card {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.03);
   background-color: #fff;
-  border-radius: 3px;
+  border-radius: 30px;
   border: none;
   position: relative;
   margin-bottom: 30px; }
@@ -653,7 +664,7 @@ select.form-control:not([size]):not([multiple]) {
     .card .card-header h4 {
       font-size: 16px;
       line-height: 28px;
-      color: var(--blue);
+      color: black;
       padding-right: 10px;
       margin-bottom: 0; }
       .card .card-header h4 + .card-header-action,
@@ -780,7 +791,7 @@ select.form-control:not([size]):not([multiple]) {
   .card.card-statistic-1 .card-body, .card.card-statistic-2 .card-body {
     font-size: 26px;
     font-weight: 400;
-    color: #34395e;
+    color: black;
     padding-bottom: 0; }
   .card.card-statistic-1, .card.card-statistic-2 {
     display: inline-block;
@@ -1071,8 +1082,8 @@ th{font-weight: 500;}
   margin: 0 3px; }
 
 .page-item.active .page-link {
-  background-color: var(--blue);
-  border-color: var(--blue); }
+  background-color: #007bff;
+  border-color: #007bff }
 
 .page-item.disabled .page-link {
   border-color: transparent;
@@ -1328,25 +1339,25 @@ h6 .badge {
     background-color: #0da8ee !important; }
 
 .btn-outline-info:hover, .btn-outline-info:focus, .btn-outline-info:active, .btn-outline-info.disabled:hover, .btn-outline-info.disabled:focus, .btn-outline-info.disabled:active {
-  background-color: #0da8ee !important;
+  background-color: #394fea !important;
   color: #fff !important; }
 
 .btn-primary, .btn-primary.disabled {
   box-shadow: 0 2px 6px #acb5f6;
-  background-color: var(--blue);
-  border-color: var(--blue); }
+  background-color: #007BFF;
+  border-color: #007BFF; }
   .btn-primary:focus, .btn-primary.disabled:focus {
-    background-color: #394eea !important; }
+    background-color: #394fea !important; }
     .btn-primary:focus:active, .btn-primary.disabled:focus:active {
-      background-color: #394eea !important; }
+      background-color: #394fea !important; }
   .btn-primary:active, .btn-primary:hover, .btn-primary.disabled:active, .btn-primary.disabled:hover {
-    background-color: #394eea !important; }
+    background-color: #394fea !important; }
 
 .btn-outline-primary, .btn-outline-primary.disabled {
   border-color: var(--blue);
   color: var(--blue); }
   .btn-outline-primary:hover, .btn-outline-primary:focus, .btn-outline-primary:active, .btn-outline-primary.disabled:hover, .btn-outline-primary.disabled:focus, .btn-outline-primary.disabled:active {
-    background-color: var(--blue) !important;
+    background-color: #394fea !important;
     color: #fff; }
 
 .btn-outline-white, .btn-outline-white.disabled {
@@ -1982,11 +1993,8 @@ body {
   background-color: #f4f6f9;
   font-size: 14px;
   font-weight: 400;
-  /*font-family: "Nunito", "Segoe UI", arial;*/
-  font-family: "poppins";
-/*   font-family: system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans","Liberation Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji"; */
-  color: #064663;
-}
+  font-family: "poppins", sans-serif;
+  color: #064663; }
 
 a.bb {
   text-decoration: none;
@@ -2394,7 +2402,7 @@ pre {
       display: inline-block;
       font-size: 24px;
       margin-top: 3px;
-      color: var(--blue); }
+      color: black; }
     .section .section-header .section-header-back {
       margin-right: 15px; }
       .section .section-header .section-header-back .btn:hover {
@@ -2837,14 +2845,14 @@ padding-left: 22px;}
       padding: 0 10px 0 20px;
       width: 100%;
       letter-spacing: .3px;
-      color: #064663;
+      color: black;
       text-decoration: none; }
       .main-sidebar .sidebar-menu li a .badge {
         float: right;
         padding: 5px 10px;
         margin-top: 2px; }
-      .main-sidebar .sidebar-menu li a i {
-        width: 35px;
+      .main-sidebar .sidebar-menu li a .sidebar-icons {
+        width: 20px;
         margin-right: 20px;
         text-align: center; }
       .main-sidebar .sidebar-menu li a span {
@@ -2852,17 +2860,16 @@ padding-left: 22px;}
         font-weight: 450;
         width: 100%; }
       .main-sidebar .sidebar-menu li a span:hover {
-        color: var(--blue);
+        color: #007BFF;
       font-weight: 500;  }
     .main-sidebar .sidebar-menu li.active a span {
-/*       color: var(--blue); */
-      color: 007BFF;
+      color: #007BFF;
       font-weight: 700; }
       .main-sidebar .sidebar-menu li.active a.has-dropdown:after {
         -webkit-transform: translate(0, -50%) rotate(90deg);
                 transform: translate(0, -50%) rotate(90deg); }
     .main-sidebar .sidebar-menu li.active ul.dropdown-menu {
-      background-color: #F7FAFF; }
+      background-color: #CFCFCF; }
     .main-sidebar .sidebar-menu li a.has-dropdown:after {
       content: "";
       font-family: 'Font Awesome 5 Free';
@@ -2896,7 +2903,7 @@ padding-left: 22px;}
       .main-sidebar .sidebar-menu li ul.dropdown-menu li.active > a {
         color: var(--blue);
         font-weight: 600; }
-      .main-sidebar .sidebar-menu li ul.dropdown-menu li a i {
+      .main-sidebar .sidebar-menu li ul.dropdown-menu li a img {
         margin-top: 1px;
         text-align: center; }
       .main-sidebar .sidebar-menu li ul.dropdown-menu li ul.dropdown-menu {
